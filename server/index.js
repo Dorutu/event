@@ -22,6 +22,6 @@ app.get("/", async(req, res)=> {
 })
 
 
-app.listen(5000, () => {
-    console.log("Server has started on port 5000")
+app.listen(config.port, () => {
+    console.log("Server has started on port "+process.env.SERVER_PORT)
 });

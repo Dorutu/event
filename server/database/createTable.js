@@ -22,9 +22,12 @@ const createTables = async () => {
         client.query(`SET search_path TO ${config.pgSchema}`);
     });
 
-    
-     await pool.query(queries.createItemsDetailsTable).then(res => "Items Details Table has been created");
-     console.log("executed4");  
+     await pool.query(queries.createArtistTable).then(res => "Artist Table has been created");
+     console.log("executed");
+     await pool.query(queries.createLocationTable).then(res => "Location Table has been created");
+     console.log("executed");
+     await pool.query(queries.createEventTable).then(res => "Event Table has been created");
+     console.log("executed");      
     
  
     await pool.end();

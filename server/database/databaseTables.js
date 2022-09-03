@@ -43,13 +43,9 @@ const createLocationTable = {
 
 
 
-
-
-
-
-
 module.exports = {
     createSchema,
     createEventTable,
-    createArtistTable
+    createArtistTable,
+    createLocationTable
 };

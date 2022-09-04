@@ -70,5 +70,8 @@ module.exports = {
   getAllLocation,
   insertArtistTable,
   inertLocationTable,
-  insertEventTable
+  insertEventTable,
+  getArtist,
+  getEvent,
+  getLocation
 }

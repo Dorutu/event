@@ -64,6 +64,29 @@ const getLocation = {
 };
 
 
+
+const deleteArtist = {
+       name: 'delete-artist',
+       text: `DELETE *
+              FROM artist_table
+              WHERE artist_id = $1`,
+};
+
+const deleteEvent = {
+       name: 'delete-event',
+       text: `DELETE *
+              FROM event_table
+              WHERE event_id = $1`,
+};
+
+const deleteLocation = {
+       name: 'delete-location',
+       text: `DELETE *
+              FROM location_table
+              WHERE location_id = $1`,
+};
+
+
 module.exports = {
   getAllEvents,
   getAllArtist,

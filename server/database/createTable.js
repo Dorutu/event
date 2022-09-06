@@ -27,7 +27,7 @@ const createTables = async () => {
      await pool.query(queries.createLocationTable).then(res => "Location Table has been created");
      console.log("executed");
      await pool.query(queries.createEventTable).then(res => "Event Table has been created");
-     console.log("executed");      
+         
     
  
     await pool.end();
